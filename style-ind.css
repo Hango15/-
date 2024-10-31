@@ -1,0 +1,65 @@
+#a {
+    color: red;
+    font-size: 24px;
+}
+
+.b {
+    color: red;
+    font-size: 20px;
+}
+
+p {
+    font-size: 18px;
+}
+
+img {
+    border: 3.5px solid green;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(fon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+a {
+    color: green;
+}
+
+a:hover {
+    color:purple;
+    font-size: 20px;
+}
+
+a:visited {
+    color: yellow;
+}
+
+.bb {
+    list-style-type: square;
+}
+
+.ab {
+    list-style-image: url(download\ \(1\).png);
+    padding-right: 60px;
+    
+}
+
+.aa {
+    list-style-type: armenian;
+}
+
+.ba {
+    list-style-type: upper-latin;
+}
+
+.bab {
+    list-style-type: lower-greek;
+}
