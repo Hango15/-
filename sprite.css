@@ -1,0 +1,94 @@
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-top: 10px;
+    margin-right: 20px;
+    color: blue;
+    font-weight: bold;
+    background-image: url(cssexample.png);
+    background-repeat: no-repeat
+}
+
+#tun {
+    background-position: -5px 0px;
+}
+
+#set {
+    background-position: -3px -27px;
+}
+
+#com {
+    background-position: -3px -55px;
+}
+
+#inet {
+    background-position: -3px -85px;
+}
+
+#a {
+    background-color: orange;
+    height: 200px;
+    width: 250px;
+    margin: auto;
+    border: 2px solid black;
+    margin-top: 250px;
+}
+
+#title {
+    background-color: rgb(234, 187, 130);
+    border: solid blue 5px;
+    height: 100px;
+    width: 500px;
+}
+
+#title h1 {
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+#article1 {
+    float: left;
+    height: 500px;
+    width: 150px;
+    border: solid blue 5px;
+    background-color: yellow;
+    line-height: 2;
+}
+
+#article1>a {
+    margin-left: 10px;
+}
+
+#article2 {
+    float: left;
+    height: 500px;
+    width: 340px;
+    border: solid blue 5px;
+    background-color: skyblue;
+}
+
+#article2>p {
+    margin-left: 30px;
+    word-wrap: break-word;
+}
+
+#bottom {
+    float: left;
+    height: 50px;
+    width: 500px;
+    border: solid blue 5px;
+    background-color: rgb(95, 95, 247);
+    margin-top: 505px;
+    margin-right: 200px;
+    position: fixed;
+}
+
+#bottom>p {
+    float: right;
+    margin-right: 20px;
+}

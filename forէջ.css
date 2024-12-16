@@ -1,0 +1,41 @@
+#big {
+    background-color: blue;
+    border: red solid 2px;
+    width: 800px;
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    color: white;
+    text-shadow: 4px 4px black;
+    margin: 10px
+}
+
+h2 {
+    color: white;
+    text-shadow: 4px 4px black;
+    margin: 10px
+}
+
+.text {
+    background-color: white;
+    margin-left: 20px 20px;
+    border: solid white 5px
+}
+
+img {
+    background-color: white;
+}
+
+#img {
+    display: inline-block;
+    text-align: center;
+    background-color:white;
+margin-left: 10px;
+}
+
+.Smile{
+    margin-top: 10px;
+    font-size: 16px;
+}
