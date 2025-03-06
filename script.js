@@ -24,7 +24,7 @@ age=parseInt(age)
 if(age>=18)
 {document.write("Դու չափահաս ես")};
 if(age<18)
-{document.write("Դու անչափահաս ես")};*/
+{document.write("Դու անչափահաս ես")};
 var tari = prompt("Ներմուծեք տարին");
 var x;
 switch (parseInt(tari)) {
@@ -39,4 +39,11 @@ switch (parseInt(tari)) {
     break;
   default:
     x = document.write("Ոչ մի նշանակալից բան");
-}
+}*/
+$("#app").click(function()
+{$("#avelcn").append("<p>Ավելացված է append-ով</p>");
+});
+$("#pre").click(function()
+{$("#avelcn").prepend("<p>Ավելացված է prepend-ով</p>");
+});
+

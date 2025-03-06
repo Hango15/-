@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trigonometric Equations Calculator</title>
+  <style>
+    /* Modern design with a gradient background, smooth animations, and refined UI */
+    body {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .calculator {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .calculator h1 {
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+      color: #333;
+    }
+    .calculator label {
+      display: block;
+      text-align: left;
+      font-size: 1rem;
+      margin-bottom: 0.3rem;
+      color: #555;
+    }
+    .calculator select {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 2px solid #ddd;
+      border-radius: 6px;
+      font-size: 1rem;
+      transition: border 0.3s;
+    }
+    .calculator select:focus {
+      outline: none;
+      border-color: #6a11cb;
+    }
+    .calculator button {
+      background: #6a11cb;
+      color: #fff;
+      border: none;
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .calculator button:hover {
+      background: #2575fc;
+    }
+    #result {
+      margin-top: 1.5rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#calculate").click(function() {
+        let eq = $("#equation").val();
+        let answer = "";
+        switch(eq) {
+          case "sin0":
+            answer = "x = nπ";
+            break;
+          case "cos0":
+            answer = "x = nπ + π/2";
+            break;
+          case "tan0":
+            answer = "x = nπ";
+            break;
+          case "sin1":
+            answer = "x = (4n+1)π/2";
+            break;
+          case "cos1":
+            answer = "x = 2nπ";
+            break;
+          case "sintheta":
+            answer = "x = nπ + (-1)^n θ, where θ ∈ [-π/2, π/2]";
+            break;
+          case "costheta":
+            answer = "x = 2nπ ± θ, where θ ∈ (0, π]";
+            break;
+          case "tantheta":
+            answer = "x = nπ + θ, where θ ∈ (-π/2, π/2]";
+            break;
+          case "sin2theta":
+            answer = "x = nπ ± θ";
+            break;
+          case "cos2theta":
+            answer = "x = nπ ± θ";
+            break;
+          case "tan2theta":
+            answer = "x = nπ ± θ";
+            break;
+          default:
+            answer = "Invalid selection";
+        }
+        $("#result").text(answer);
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="calculator">
+    <h1>Trigonometric Equations Calculator</h1>
+    <div>
+      <label for="equation">Select Equation:</label>
+      <select id="equation">
+        <option value="sin0">sin x = 0</option>
+        <option value="cos0">cos x = 0</option>
+        <option value="tan0">tan x = 0</option>
+        <option value="sin1">sin x = 1</option>
+        <option value="cos1">cos x = 1</option>
+        <option value="sintheta">sin x = sin θ</option>
+        <option value="costheta">cos x = cos θ</option>
+        <option value="tantheta">tan x = tan θ</option>
+        <option value="sin2theta">sin 2x = sin 2θ</option>
+        <option value="cos2theta">cos 2x = cos 2θ</option>
+        <option value="tan2theta">tan 2x = tan 2θ</option>
+      </select>
+    </div>
+    <button id="calculate">Calculate</button>
+    <p id="result"></p>
+  </div>
+</body>
+</html>

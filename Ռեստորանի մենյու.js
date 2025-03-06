@@ -13,6 +13,15 @@ switch (food) {
     case "Սուրճ":
         ord = document.write("100դրամ");
         break;
+    case "miqoi klir":
+        ord = document.write(" shat poqr a");
+        break;
+    case "SHAURMA":
+        ord = document.write("∞ դրամ");
+        break;
+    case "burger":
+        ord = document.write("400 դրամ");
+        break;
     default:
         ord = document.write("այդպիսի ապրանք չունենք");
 }
